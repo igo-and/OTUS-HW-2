@@ -1,10 +1,9 @@
 from dataclasses import dataclass
-from typing import Any
 
 @dataclass
 class Engine:
-    volume: Any = float
-    pistons: Any = int
+    volume: float = 1.5
+    pistons: int = 4
 
-engine_car = Engine(3.8, 8)
-print(engine_car.__dict__)
+engine = Engine(2.5, 6)
+print(engine.__dict__)
